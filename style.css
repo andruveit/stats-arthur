@@ -1,0 +1,223 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #DEDBCC;
+  color: #a99e84;
+}
+
+.container {
+  background-color: #3b231b;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  align-items: center;
+}
+
+.player-info {
+  position: relative; /* Para permitir o posicionamento absoluto do ícone */
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.player-name-container {
+  flex-grow: 1; /* Faz o nome ocupar o espaço disponível */
+}
+
+.player-icon {
+  position: absolute;
+  right: 10px; /* Define a distância do ícone para o canto direito */
+  top: 50%; /* Centraliza verticalmente em relação ao contêiner */
+  transform: translateY(-50%); /* Ajusta a posição para centralizar corretamente */
+  width: 30px;
+  height: 30px;
+  color: #a99e84; /* Cor do ícone para FontAwesome */
+  margin-top: 7.9px
+}
+
+.player-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.player-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.player-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.player-detail {
+  display: flex;
+  align-items: center;
+}
+
+.player-svg-detail {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  margin-right: 8px;
+}
+
+.player-detail-value {
+  font-weight: bold;
+}
+
+.fact-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #a99e84;
+  border-radius: 5px;
+  background-color: #a99e84;
+}
+
+.fact-container p {
+  position: relative;
+  color: #4b3126;
+}
+
+.fact-container p span {
+  display: inline-block;
+  position: relative;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: #4b3126;
+  color: #a99e84;
+}
+
+.fact-container p span::after {
+  color: #4b3126;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #A89777;
+  border-radius: 5px;
+}
+
+.fact-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #4b3126;
+}
+
+.stats-container {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14.5px;
+  max-height: 155px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #a99e84;
+  font-size: 14px;
+}
+
+.stat-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.stat-value {
+  font-weight: bold;
+  color: #968864;
+  font-size: 14px;
+}
+
+.stat-value-green {
+  color: #528240;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background-color: #A89777;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #806f52;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+  
+.scoreboard {
+  background-color: #3b231b;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+}
+
+.team-logo {
+  width: 40px; /* Ajuste o tamanho da logo conforme necessário */
+  height: 40px;
+  margin-right: 5px; /* Reduzir o espaçamento entre o logo e o nome */
+}
+
+.team-name {
+  font-weight: bold;
+  color: #A89777;
+  font-size: 14px;
+  margin-left: 2px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #A89777;
+  margin-bottom: 5px; /* Espaçamento entre o placar e o status */
+}
+
+.status {
+  font-size: 10px;
+  color: #8b7a5b;
+  margin-top: 0.5px;
+}
